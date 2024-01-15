@@ -11,7 +11,7 @@ def main():
     user_ls = input("Print the numbers, using space as a separator: ").split()
     try:
         min_ls, max_ls = find_extremums(user_ls)
-        print(f"The minimum values in your list is {min_ls}, while the maximum number is {max_ls}.")
+        print(f"The minimum number in your list is {min_ls}, while the maximum is {max_ls}.")
     except ValueError:
         print("Only numbers are accepted. Try again and ensure you do not input any characters other than numbers.\n")
         main()
